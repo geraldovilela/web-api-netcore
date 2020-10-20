@@ -23,6 +23,7 @@ namespace ShelvesAndBooks.Models
         [MaxLength(60, ErrorMessage = "Campo Nome do Autor deve ter no maximo 60 caracteres.")]
         public string WriterName { get; set; }
 
+        [MaxLength(1024, ErrorMessage = "Descrição pode conter até no maximo 1024 caracteres.")]
         public string Description { get; set; }
 
         [Required(ErrorMessage = "Identificador da Prateleira não pode ser invalido.")]
