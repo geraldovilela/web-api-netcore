@@ -27,8 +27,7 @@ namespace ShelvesAndBooks.Models
         public string Description { get; set; }
 
         [Required(ErrorMessage = "Identificador da Prateleira não pode ser invalido.")]
-        [Range(1, int.MaxValue, ErrorMessage = "ID Invalido")]
-        public Shelve ShelveId { get; set; }
+        public Shelve Shelve { get; set; }
 
 
     }

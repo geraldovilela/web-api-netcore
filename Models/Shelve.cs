@@ -8,7 +8,8 @@ namespace ShelvesAndBooks.Models
 {
     public class Shelve
     {
-        private int Id { get; set; }
+        [Key]
+        public int Id { get; set; }
 
         [Required(ErrorMessage= "Este Campo é Obrigatorio!")]
         [MaxLength(250, ErrorMessage="Esta Descrição permite até 250 caracteres apenas!")]

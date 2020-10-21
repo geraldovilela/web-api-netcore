@@ -11,10 +11,9 @@ namespace ShelvesAndBooks.Data
 {
     public class Connection : DbContext
     {
-        public DataContext(DbContextOptions<Connection> options)
+        public Connection(DbContextOptions<Connection> options)
             : base(options)
-        {
-            return void;
+        {        
         }
 
         public DbSet<Book> Books { get; set; }
